@@ -1,0 +1,35 @@
+name: Playerutil
+version: '${version}'
+main: xyz.twobtwofr.playerutil.Playerutil
+api-version: 1.19
+authors: [ SomeBoringNerd ]
+description: Show infos about a player
+website: 2b2fr.xyz
+commands:
+  playtime:
+    usage: /playtime <player>
+    description: give you the play time of a player
+    aliases:
+      - playtime
+      - pt
+  joindate:
+    usage: /joindate <player>
+    description: give you the join date of a player
+    aliases:
+      - joindate
+      - jd
+  seen:
+    usage: /seen <player>
+    description: show you the last time a player was seen on the server
+    aliases:
+      - seen
+      - lastseen
+  help:
+    usage: /help
+    description: give some infos about the server
+  dupe:
+    usage: /dupe
+    description: Link to a guide on how to dupe on the server
+  discord:
+    usage: /discord
+    description: Link to the discord
