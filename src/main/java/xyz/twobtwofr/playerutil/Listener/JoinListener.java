@@ -45,7 +45,7 @@ public class JoinListener implements Listener
             }else{
                 try {
                     Player player = event.getPlayer();
-                    Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
+                    Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.DEATHS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -65,7 +65,7 @@ public class JoinListener implements Listener
             for(Player player : Bukkit.getOnlinePlayers())
             {
                 try {
-                    Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
+                    Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.DEATHS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -82,7 +82,7 @@ public class JoinListener implements Listener
         Player player = event.getPlayer();
 
         try {
-            Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
+            Playerutil.prepareStatement("UPDATE " + (Playerutil.Debug ? "player_data_debug" : "player_data") + " SET TickPlayTime=" + (int)player.getStatistic(Statistic.TOTAL_WORLD_TIME) + ", _Kill=" + player.getStatistic(Statistic.PLAYER_KILLS) + ", Death=" + player.getStatistic(Statistic.DEATHS) + ", LastSeen=now() WHERE UUID='" + player.getPlayer().getUniqueId().toString().replace("-", "") + "';").executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

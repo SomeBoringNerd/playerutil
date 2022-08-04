@@ -1,5 +1,5 @@
 name: Playerutil
-version: '${version}'
+version: '1.1'
 main: xyz.twobtwofr.playerutil.Playerutil
 api-version: 1.19
 authors: [ SomeBoringNerd ]
@@ -24,6 +24,15 @@ commands:
     aliases:
       - seen
       - lastseen
+  ratio:
+    usage: /ratio <player>
+    description: show the kill / death ratio of a player
+    aliases:
+      - killdeath
+      - kdr
+      - kd
+      - ratio
+      - killdeathratio
   help:
     usage: /help
     description: give some infos about the server

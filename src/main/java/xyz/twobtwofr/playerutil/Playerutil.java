@@ -3,6 +3,7 @@ package xyz.twobtwofr.playerutil;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.twobtwofr.playerutil.Listener.JoinListener;
+import xyz.twobtwofr.playerutil.Listener.RespawnListener;
 import xyz.twobtwofr.playerutil.commands.*;
 
 import java.sql.Connection;
@@ -28,8 +29,11 @@ public final class Playerutil extends JavaPlugin
         getCommand("help").setExecutor(new help());
         getCommand("dupe").setExecutor(new dupe());
         getCommand("discord").setExecutor(new discord());
+        getCommand("ratio").setExecutor(new kd());
 
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
+        getServer().getPluginManager().registerEvents(new RespawnListener(), this);
+
         try {
             openConnection();
         } catch (SQLException e) {
