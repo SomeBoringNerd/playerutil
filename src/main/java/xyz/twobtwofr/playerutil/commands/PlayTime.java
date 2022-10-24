@@ -13,7 +13,7 @@ public class PlayTime implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args)
     {
         if(args.length == 0){
-            sender.sendMessage("[§52b2fr§r] : Please mention a player");
+            sender.sendMessage("[§5SpaceAnarchy§r] : Please mention a player");
             return false;
         }else{
             OfflinePlayer player = Bukkit.getOfflinePlayer(args[0]);
@@ -21,14 +21,14 @@ public class PlayTime implements CommandExecutor {
             int tick_time = player.getStatistic(Statistic.TOTAL_WORLD_TIME);
 
             if(tick_time == 0) {
-                sender.sendMessage("[§52b2fr§r] : That player never played on the server");
+                sender.sendMessage("[§5SpaceAnarchy§r] : That player never played on the server");
             }
             else{
                     float hour = (float)tick_time / 20 / 60 / 60;
                     int _hour = (int)hour;
                     float minute = ((hour - (float)_hour) * 60);
 
-                    sender.sendMessage("[§52b2fr§r] : Player §4" + player.getName() + "§r have played for " + (_hour != 0 ? _hour + "h" + (int)(minute) : "less than one hour") + " || " + tick_time + " ticks");
+                    sender.sendMessage("[§5SpaceAnarchy§r] : Player §4" + player.getName() + "§r have played for " + (_hour != 0 ? _hour + "h" + (int)(minute) : "less than one hour") + " || " + tick_time + " ticks");
             }
         }
         return true;

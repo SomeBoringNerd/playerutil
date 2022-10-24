@@ -12,12 +12,11 @@ commands:
     aliases:
       - playtime
       - pt
-  joindate:
-    usage: /joindate <player>
-    description: give you the join date of a player
+  command:
+    usage: /command
+    description: give you a list of commands
     aliases:
-      - joindate
-      - jd
+      - cmd
   seen:
     usage: /seen <player>
     description: show you the last time a player was seen on the server

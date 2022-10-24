@@ -11,14 +11,7 @@ public class help implements CommandExecutor
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
-        sender.sendMessage("§52B2FR COMMANDS : ");
-        sender.sendMessage("/dupe : tutorial on how to dupe");
-        sender.sendMessage("/playtime <player> : display a player's playtime");
-        sender.sendMessage("/joindate <player> : show a player's join date");
-        sender.sendMessage("/seen <player> : show the last time a player was online");
-        sender.sendMessage("/discord : join our discord :D");
-        sender.sendMessage("/ratio <player> : kill/death ratio of a player");
-        sender.sendMessage("");
+
         sender.sendMessage("§52B2FR TRIVIAL");
         sender.sendMessage("");
         sender.sendMessage(">§6the server run NoChatReport (§5https://github.com/SomeBoringNerd/NoChatReport§r)");
@@ -31,6 +24,7 @@ public class help implements CommandExecutor
         sender.sendMessage(">§6the server do not log any ip to insure player safety");
         sender.sendMessage("");
         sender.sendMessage("The server's seed is : [§6" + Bukkit.getWorld("Map").getSeed() +"§r]");
+        sender.sendMessage("For a list of commands, do /command");
         return true;
     }
 }
