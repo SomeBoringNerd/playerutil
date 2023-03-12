@@ -11,12 +11,6 @@ import java.sql.SQLException;
 
 public final class Playerutil extends JavaPlugin
 {
-    public static final boolean Debug = true;
-    private final String DATA_BASE_IP = "localhost";
-    private final String TABLE = "2b2fr";
-    private final String USER = "root";
-    private final String PASSWORD = "123456789";
-
     public static Connection connection;
 
     @Override

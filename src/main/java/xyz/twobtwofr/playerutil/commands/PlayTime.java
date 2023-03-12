@@ -28,7 +28,7 @@ public class PlayTime implements CommandExecutor {
                     int _hour = (int)hour;
                     float minute = ((hour - (float)_hour) * 60);
 
-                    sender.sendMessage("[§5SpaceAnarchy§r] : Player §4" + player.getName() + "§r have played for " + (_hour != 0 ? _hour + "h" + (int)(minute) : "less than one hour") + " || " + tick_time + " ticks");
+                    sender.sendMessage("[§5SpaceAnarchy§r] : Player §4" + player.getName() + "§r have played for " + (_hour != 0 ? _hour + "h" + (int)(minute) : "less than one hour") + " (" + tick_time + " ticks)");
             }
         }
         return true;

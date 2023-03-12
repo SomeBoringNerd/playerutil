@@ -13,7 +13,6 @@ commands:
       - playtime
       - pt
   command:
-    usage: /command
     description: give you a list of commands
     aliases:
       - cmd
@@ -33,11 +32,6 @@ commands:
       - ratio
       - killdeathratio
   help:
-    usage: /help
     description: give some infos about the server
   dupe:
-    usage: /dupe
     description: Link to a guide on how to dupe on the server
-  discord:
-    usage: /discord
-    description: Link to the discord

@@ -9,12 +9,11 @@ import org.jetbrains.annotations.NotNull;
 public class help implements CommandExecutor
 {
     @Override
-    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
-
-        sender.sendMessage("§52B2FR TRIVIAL");
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args)
+    {
+        sender.sendMessage("§5SpaceAnarchy TRIVIAL");
         sender.sendMessage("");
-        sender.sendMessage(">§6the server run NoChatReport (§5https://github.com/SomeBoringNerd/NoChatReport§r)");
+        sender.sendMessage(">§6the server run an anti message report (§5https://git.someboringnerd.xyz/someboringnerd/ChatReportDisable-plugin§r)");
         sender.sendMessage("§6to ensure your freedom of speech isn't compromised by Microsoft ;)");
         sender.sendMessage("");
         sender.sendMessage(">§6The server run custom plugins that are available and open source on the server's discord");
@@ -25,6 +24,7 @@ public class help implements CommandExecutor
         sender.sendMessage("");
         sender.sendMessage("The server's seed is : [§6" + Bukkit.getWorld("Map").getSeed() +"§r]");
         sender.sendMessage("For a list of commands, do /command");
+
         return true;
     }
 }

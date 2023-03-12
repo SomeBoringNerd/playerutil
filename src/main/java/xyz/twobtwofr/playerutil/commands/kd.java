@@ -17,7 +17,7 @@ public class kd implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args)
     {
         if(args.length == 0){
-            sender.sendMessage("[§52b2fr§r] : please mention a player");
+            sender.sendMessage("[§5SpaceAnarchy§r] : please mention a player");
             return false;
         }else
         {
