@@ -13,7 +13,6 @@ public class dupe implements CommandExecutor
     {
         sender.sendMessage("[§5SpaceAnarchy§r] : here's a tutorial on how to dupe on the server : ");
         sender.sendMessage("[§5SpaceAnarchy§r] : §6https://www.youtube.com/watch?v=-PIgK0eoxMU");
-
         return true;
     }
 }

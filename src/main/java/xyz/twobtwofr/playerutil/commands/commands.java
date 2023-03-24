@@ -14,7 +14,6 @@ public class commands implements CommandExecutor {
         sender.sendMessage("§6/playtime <player> §r: display a player's playtime");
         sender.sendMessage("§6/ratio <player> §r: kill/death ratio of a player");
         sender.sendMessage("§6/tpa <player> §r: teleport to a player");
-        sender.sendMessage("");
 
         return true;
     }

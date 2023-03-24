@@ -31,7 +31,7 @@ public class RespawnListener implements Listener
         {
             long randomX = new Random().nextInt(500);
             long randomZ = new Random().nextInt(500);
-            long randomY = 319;
+            long randomY = event.getPlayer().getWorld().getHighestBlockYAt((int)randomX, (int)randomZ);
 
             event.setRespawnLocation(new Location(Bukkit.getWorld("Map"), randomX, randomY, randomZ));
         }
